@@ -9,7 +9,7 @@
   <Identity
     Name="A4B91446.UWPAutoLaunch"
     Publisher="CN=90254071-376F-42E3-B68E-058FC1D59557"
-    Version="1.0.2.0" />
+    Version="1.0.3.0" />
 
   <Properties>
     <DisplayName>UWP_AutoLaunch</DisplayName>
@@ -40,6 +40,11 @@
         <uap:SplashScreen Image="Images\SplashScreen.png" />
         <uap:LockScreen BadgeLogo="Images\BadgeLogo.png" Notification="badge"/>
       </uap:VisualElements>
+      <Extensions>
+        <uap:Extension Category="windows.protocol">
+          <uap:Protocol Name="uwp-auto-launch"/>
+        </uap:Extension>
+      </Extensions>
     </Application>
   </Applications>
 

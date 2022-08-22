@@ -9,6 +9,6 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <TextBlock Text="{x:Bind AssemblyVersion}" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
     </Grid>
 </Page>

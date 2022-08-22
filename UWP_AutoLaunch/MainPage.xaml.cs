@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
@@ -25,6 +26,19 @@ namespace UWP_AutoLaunch
         public MainPage()
         {
             this.InitializeComponent();
+        }
+
+        public string AssemblyVersion
+        {
+            get
+            {
+                var aversion = typeof(App).GetTypeInfo().Assembly.GetName().Version;
+                if (aversion != null)
+                {
+                    return $"{aversion?.Major}.{aversion?.Minor}.{aversion?.Build}";
+                }
+                return "0.0.0";
+            }
         }
     }
 }

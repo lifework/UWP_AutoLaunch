@@ -1,11 +1,12 @@
-﻿using System;
+﻿using Microsoft.Toolkit.Uwp.Notifications;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.ApplicationModel.Background;
-
+using Windows.UI.Notifications;
 
 namespace BackgroundTasks
 {
@@ -13,13 +14,8 @@ namespace BackgroundTasks
     {
         public void Run(IBackgroundTaskInstance taskInstance)
         {
-/*            new ToastContentBuilder()
-                .AddArgument("action", "viewConversation")
-                .AddArgument("conversationId", 9813)
-                .AddText("Andrew sent you a picture")
-                .AddText("Check this out, The Enchantments in Washington!")
-                .Show();*/
-            Debug.WriteLine("OK");
+            new ToastContentBuilder().AddText("UpdateTask.Run").Show();
+            Debug.WriteLine("UpdateTask.Run");
         }
     }
 }

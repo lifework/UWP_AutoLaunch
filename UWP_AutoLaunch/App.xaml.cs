@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Toolkit.Uwp.Notifications;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -71,6 +72,7 @@ namespace UWP_AutoLaunch
                 // 現在のウィンドウがアクティブであることを確認します
                 Window.Current.Activate();
             }
+            // new ToastContentBuilder().AddText("OnLaunched !").Show();
         }
 
         /// <summary>

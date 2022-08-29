@@ -14,7 +14,8 @@ namespace BackgroundTasks
     {
         public void Run(IBackgroundTaskInstance taskInstance)
         {
-            new ToastContentBuilder().AddText("UpdateTask.Run").Show();
+            var toast = new ToastContentBuilder().AddText($"UpdateTask.Run: NEW").AddArgument("updated");
+            toast.Show();
             Debug.WriteLine("UpdateTask.Run");
         }
     }

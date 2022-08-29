@@ -9,7 +9,7 @@
   <Identity
     Name="A4B91446.UWPAutoLaunch"
     Publisher="CN=90254071-376F-42E3-B68E-058FC1D59557"
-    Version="1.5.26.0" />
+    Version="1.5.28.0" />
 
   <Properties>
     <DisplayName>UWP_AutoLaunch</DisplayName>
@@ -39,6 +39,9 @@
         <uap:DefaultTile Wide310x150Logo="Images\Wide310x150Logo.png"  Square71x71Logo="Images\SmallTile.png" Square310x310Logo="Images\LargeTile.png"/>
         <uap:SplashScreen Image="Images\SplashScreen.png" />
       </uap:VisualElements>
+      <Extensions>
+        <Extension Category="windows.updateTask" EntryPoint="BackgroundTasks.UpdateTask"/>
+      </Extensions>
     </Application>
   </Applications>
 

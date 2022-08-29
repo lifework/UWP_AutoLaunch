@@ -4,8 +4,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UWP_AutoLaunch", "UWP_AutoLaunch\UWP_AutoLaunch.csproj", "{603D54B8-199E-4FA8-933C-24D8A5C4EE55}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3C697799-8160-4A82-9ECC-52B81BF9DB5D} = {3C697799-8160-4A82-9ECC-52B81BF9DB5D}
+	EndProjectSection
 EndProject
 Project("{C7167F0D-BC9F-4E6E-AFE1-012C56B48DB5}") = "msix-store-packaging", "msix-store-packaging\msix-store-packaging.wapproj", "{B911639F-67E0-4D1F-9990-37501D0F9665}"
+	ProjectSection(ProjectDependencies) = postProject
+		{852B3778-8391-461B-9BC4-552E9E8E974E} = {852B3778-8391-461B-9BC4-552E9E8E974E}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackgroundTasks", "WIndowsRuntimeComponent\BackgroundTasks.csproj", "{3C697799-8160-4A82-9ECC-52B81BF9DB5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Application", "WPF_Application\WPF_Application.csproj", "{852B3778-8391-461B-9BC4-552E9E8E974E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackgroundTasks", "BackgroundTasks\BackgroundTasks.csproj", "{D6C92F82-C42B-4511-A363-E6B3D8922CED}"
 EndProject

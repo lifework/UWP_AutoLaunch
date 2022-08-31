@@ -9,7 +9,7 @@
   <Identity
     Name="A4B91446.UWPAutoLaunch"
     Publisher="CN=90254071-376F-42E3-B68E-058FC1D59557"
-    Version="1.9.60.0" />
+    Version="1.11.63.0" />
 
   <Properties>
     <DisplayName>UWP_AutoLaunch</DisplayName>

@@ -42,36 +42,40 @@ namespace UWP_AutoLaunch
                 return "0.0.0";
             }
         }
-
-/*
-        public static readonly string PackageName = "A4B91446.UWPAutoLaunch";
-
-        public string PackageVersion
+        private async void Button_Click(object sender, RoutedEventArgs e)
         {
-            get
-            {
-
-                var version = InstalledPackageVersion();
-                return $"{version.Major}.{version.Minor}.{version.Build}";
-            }
+            await FullTrustProcessLauncher.LaunchFullTrustProcessForCurrentAppAsync();
         }
 
-        public static Package InstalledPackage()
-        {
-            var manager = new PackageManager();
-            var packages = manager.FindPackagesForUser(string.Empty);
-            Package package = packages.FirstOrDefault(x => x.Id.Name == PackageName);
-            if (package != null)
-            {
-                package = manager.FindPackageForUser(string.Empty, package.Id.FullName);
-            }
-            return package;
-        }
+        /*
+                public static readonly string PackageName = "A4B91446.UWPAutoLaunch";
 
-        public static PackageVersion InstalledPackageVersion()
-        {
-            return InstalledPackage().Id.Version;
-        }
-*/
+                public string PackageVersion
+                {
+                    get
+                    {
+
+                        var version = InstalledPackageVersion();
+                        return $"{version.Major}.{version.Minor}.{version.Build}";
+                    }
+                }
+
+                public static Package InstalledPackage()
+                {
+                    var manager = new PackageManager();
+                    var packages = manager.FindPackagesForUser(string.Empty);
+                    Package package = packages.FirstOrDefault(x => x.Id.Name == PackageName);
+                    if (package != null)
+                    {
+                        package = manager.FindPackageForUser(string.Empty, package.Id.FullName);
+                    }
+                    return package;
+                }
+
+                public static PackageVersion InstalledPackageVersion()
+                {
+                    return InstalledPackage().Id.Version;
+                }
+        */
     }
 }

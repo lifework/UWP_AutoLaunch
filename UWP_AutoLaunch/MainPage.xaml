@@ -8,7 +8,8 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <TextBlock Text="{x:Bind AssemblyVersion}" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
-    </Grid>
+    <StackPanel HorizontalAlignment="Center"  VerticalAlignment="Center">
+        <TextBlock Text="{x:Bind AssemblyVersion}"/>
+        <Button Content="Launch" Click="Button_Click" />
+    </StackPanel>
 </Page>
